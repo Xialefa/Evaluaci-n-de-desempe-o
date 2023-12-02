@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Desempeño del Vendedor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Evaluación de Desempeño del Vendedor</h1>
+
+    <h2>I. Información del Vendedor:</h2>
+    <p>
+        <label>Nombre del Vendedor:
+            <input type="text" name="nombreVendedor">
+        </label>
+    </p>
+    <p>
+        <label>Período de Evaluación:
+            <input type="text" name="periodoEvaluacion">
+        </label>
+    </p>
+    <p>
+        <label>Cargo:
+            <input type="text" name="cargo">
+        </label>
+    </p>
+    <p>
+        <label>Supervisor:
+            <input type="text" name="supervisor">
+        </label>
+    </p>
+
+    <h2>II. Objetivos y Metas:</h2>
+
+    <h3>1. Objetivos Establecidos:</h3>
+    <p>
+        <label>Incrementar las ventas mensuales en un 15%:
+            <input type="radio" name="ventas" value="1"> 1
+            <input type="radio" name="ventas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="ventas" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Mejorar la retención de clientes en un 10%:
+            <input type="radio" name="retencion" value="1"> 1
+            <input type="radio" name="retencion" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="retencion" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Introducir al menos dos productos nuevos en el catálogo:
+            <input type="radio" name="productosNuevos" value="1"> 1
+            <input type="radio" name="productosNuevos" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="productosNuevos" value="10"> 10
+        </label>
+    </p>
+
+    <h3>2. Logro de Objetivos:</h3>
+    <p>
+        <label>Logró un aumento del 18% en las ventas, superando la meta establecida:
+            <input type="radio" name="logroVentas" value="1"> 1
+            <input type="radio" name="logroVentas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="logroVentas" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Excedió las expectativas al retener al 12% más de clientes:
+            <input type="radio" name="logroRetencion" value="1"> 1
+            <input type="radio" name="logroRetencion" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="logroRetencion" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Introdujo tres nuevos productos, cumpliendo con el objetivo:
+            <input type="radio" name="logroProductosNuevos" value="1"> 1
+            <input type="radio" name="logroProductosNuevos" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="logroProductosNuevos" value="10"> 10
+        </label>
+    </p>
+
+    <h2>III. Competencias Profesionales:</h2>
+
+    <h3>1. Conocimiento del Producto/Servicio:</h3>
+    <p>
+        <label>Demuestra un profundo conocimiento de todas las características de los productos:
+            <input type="radio" name="conocimientoProductos" value="1"> 1
+            <input type="radio" name="conocimientoProductos" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="conocimientoProductos" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Actualiza constantemente su conocimiento sobre nuevas ofertas y actualizaciones de productos:
+            <input type="radio" name="actualizacionConocimiento" value="1"> 1
+            <input type="radio" name="actualizacionConocimiento" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="actualizacionConocimiento" value="10"> 10
+        </label>
+    </p>
+
+    <h3>2. Habilidades de Comunicación:</h3>
+    <p>
+        <label>Se comunica de manera clara y efectiva, demostrando empatía con los clientes:
+            <input type="radio" name="comunicacionClara" value="1"> 1
+            <input type="radio" name="comunicacionClara" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="comunicacionClara" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Utiliza un lenguaje claro y adaptado al cliente durante las interacciones:
+            <input type="radio" name="lenguajeAdaptado" value="1"> 1
+            <input type="radio" name="lenguajeAdaptado" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="lenguajeAdaptado" value="10"> 10
+        </label>
+    </p>
+
+    <h3>3. Habilidades de Negociación:</h3>
+    <p>
+        <label>Habilidades sólidas para negociar términos favorables para la empresa y el cliente:
+            <input type="radio" name="habilidadesNegociacion" value="1"> 1
+            <input type="radio" name="habilidadesNegociacion" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="habilidadesNegociacion" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Capacidad para cerrar acuerdos de manera efectiva y eficiente:
+            <input type="radio" name="cierreAcuerdos" value="1"> 1
+            <input type="radio" name="cierreAcuerdos" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="cierreAcuerdos" value="10"> 10
+        </label>
+    </p>
+
+    <h3>4. Relación con el Cliente:</h3>
+    <p>
+        <label>Establece relaciones sólidas y duraderas con los clientes:
+            <input type="radio" name="relacionesDuraderas" value="1"> 1
+            <input type="radio" name="relacionesDuraderas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="relacionesDuraderas" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Recibe comentarios positivos frecuentes sobre la calidad del servicio:
+            <input type="radio" name="comentariosPositivos" value="1"> 1
+            <input type="radio" name="comentariosPositivos" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="comentariosPositivos" value="10"> 10
+        </label>
+    </p>
+
+    <h2>IV. Cumplimiento de Cuotas/Ventas:</h2>
+
+    <h3>1. Cuotas de Ventas:</h3>
+    <p>
+        <label>Cumple consistentemente con las cuotas mensuales asignadas:
+            <input type="radio" name="cumplimientoCuotas" value="1"> 1
+            <input type="radio" name="cumplimientoCuotas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="cumplimientoCuotas" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Supera las cuotas en la mayoría de los trimestres:
+            <input type="radio" name="superaCuotas" value="1"> 1
+            <input type="radio" name="superaCuotas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="superaCuotas" value="10"> 10
+        </label>
+    </p>
+
+    <h3>2. Estrategias para Alcanzar Cuotas:</h3>
+    <p>
+        <label>Implementa estrategias creativas para superar las metas de ventas:
+            <input type="radio" name="estrategiasCreativas" value="1"> 1
+            <input type="radio" name="estrategiasCreativas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="estrategiasCreativas" value="10"> 10
+        </label>
+    </p>
+    <p>
+        <label>Ajusta enfoques según las tendencias del mercado, asegurando un rendimiento constante:
+            <input type="radio" name="ajusteTendencias" value="1"> 1
+            <input type="radio" name="ajusteTendencias" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="ajusteTendencias" value="10"> 10
+        </label>
+    </p>
+
+    <h2>V. Resolución de Problemas:</h2>
+
+    <h3>1. Manejo de Objeciones:</h3>
+    <p>
+        <label>Aborda las objeciones de manera proactiva y efectiva, convirtiendo situaciones negativas en oportunidades:
+            <input type="radio" name="manejoObjeciones" value="1"> 1
+            <input type="radio" name="manejoObjeciones" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="manejoObjeciones" value="10"> 10
+        </label>
+    </p>
+
+    <h3>2. Resolución de Problemas en Ventas:</h3>
+    <p>
+        <label>Enfrenta desafíos con resiliencia, encontrando soluciones efectivas durante el proceso de ventas:
+            <input type="radio" name="resolucionProblemas" value="1"> 1
+            <input type="radio" name="resolucionProblemas" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="resolucionProblemas" value="10"> 10
+        </label>
+    </p>
+
+    <h2>VI. Autogestión y Organización:</h2>
+
+    <h3>1. Gestión del Tiempo:</h3>
+    <p>
+        <label>Evaluar cómo el vendedor gestiona su tiempo para maximizar la productividad:
+            <input type="radio" name="gestionTiempo" value="1"> 1
+            <input type="radio" name="gestionTiempo" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="gestionTiempo" value="10"> 10
+        </label>
+    </p>
+
+    <h3>2. Organización de Tareas:</h3>
+    <p>
+        <label>Evaluar la capacidad del vendedor para organizar y priorizar tareas:
+            <input type="radio" name="gestionTiempo" value="1"> 1
+            <input type="radio" name="gestionTiempo" value="2"> 2
+            <!-- ... (repite hasta 10) -->
+            <input type="radio" name="gestionTiempo" value="10"> 10
+        </label>
+    </p>
+<button type="submit">Enviar Evaluación</button>
+
+</body>
+</html>
